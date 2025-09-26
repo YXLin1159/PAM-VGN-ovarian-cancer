@@ -83,7 +83,6 @@ def saft1Bscan(bscan , Lz , La , r_bf , dx , zf , fs , N_zero_pad , z_sample , S
         rf_sum[:,idx_aline] = np.multiply(rf_sum0 , cf_var_saft)    
     return rf_sum
 
-
 def computeSAFT(raw_data , saftParam):
     [Lb , La , Lz] = raw_data.shape
     rf_saft = np.zeros((Lz , La , Lb))
@@ -155,3 +154,4 @@ def plotMIP(mip , lb , up):
     plt.show() 
     plt.gcf().set_dpi(400)
     return
+# %%
